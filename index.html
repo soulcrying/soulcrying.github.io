@@ -3,20 +3,23 @@
 <head>
        <meta charest="UTF-8">
        <title>页面每次刷新一次，加载不同的背景图片</title>
-       <style>
-       #changebg{width:  964px;height:  460px;margin:  0  auto; }
-       </style>
 </head>
 
 <body>
 
-<div  id="changbg"><</div>
+//<!CDATA[
+ var bodyBgs <a href="http://www.iatld.org/">online casino reviews</a> = [];
+ bodyBgs[0] = "images/bg1.jpg";
+ bodyBgs[1] = "images/bg2.jpg";
+ bodyBgs[2] = "images/bg3.jpg";
+ bodyBgs[3] = "images/bg4.jpg";
+ bodyBgs[4] = "images/bg5.jpg";
 
-<script>
+ var randomBgIndex = Math.round( Math.random() * 4 );
 
-var imgs=["bg1.jpg", "bg2.jpg", "bg3.jpg", "bg4.jpg", "bg5.jpg"]
-document.getElementById("changbg").style.background="rul"("+imgs[Math.random()*(img.length))]+")";
+//输出随机的背景图
+ document.write("<style>body{background:url(" bodyBgs[randomBgIndex] ") no-repeat 50% 0}</style>");
+//]]&gt;
 
-</script>
 </body>
 </html>
