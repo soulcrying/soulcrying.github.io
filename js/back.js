@@ -7,5 +7,5 @@
 　　 image [4] = './imgs/5.jpg'
 　　 number = Math.floor(Math.random() * image.length);
     var obj = document.getElementById("top-slider");
-    obj.style.cssText ="background:url("+image[number]+");background-position: 0 0;    background-repeat: no-repeat;    background-attachment: fixed; margin: 0 auto; background-size: cover;"; 
+    obj.style.cssText ="background:url("+imgs[number]+");background-position: 0 0;    background-repeat: no-repeat;    background-attachment: fixed; margin: 0 auto; background-size: cover;"; 
 </script>
