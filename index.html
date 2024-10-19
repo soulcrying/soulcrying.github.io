@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charest="UTF-8">
+       <title>页面每次刷新一次，加载不同的背景图片</title>
+       <style>
+       #changebg{width:  964px;height:  460px;margin:  0  auto; }
+       </style>
+</head>
+
+<body>
+
+<div  id="changbg"><</div>
+
+<script>
+
+var img=["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
+document.getElementById("changbg").style.background="rul"("+img[Math.random()*(img.length))]+")";
+
+</script>
+</body>
+</html>
