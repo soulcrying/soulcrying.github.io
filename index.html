@@ -17,8 +17,8 @@
 			overflow:hidden;
 		}
 		body {
-			background-color:#000;
-			background-size:100% 100%;
+			ground-color:#000;
+			ground-size:100% 100%;
 		}
 
 		#clock {
@@ -64,10 +64,10 @@
 		margin:0;
 		overflow:hidden;
 
-		background-image:url(https://api-images.kanochan.net/api.php);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
+		ground-image:url(https://gitee.com/soultears/home/raw/master/imgs/7.jpeg);
+		ground-position: center center;
+		ground-repeat: no-repeat;
+		ground-size: cover;
 	}
 	canvas {
 		padding:0;
@@ -98,8 +98,8 @@
 			return  window.requestAnimationFrame       ||
 					window.webkitRequestAnimationFrame ||
 					window.mozRequestAnimationFrame    ||
-					function( callback ){
-						window.setTimeout(callback, 1000 / 60);
+					function( call ){
+						window.setTimeout(call, 1000 / 60);
 					};
 		})();
 		var w, h, minW;
@@ -198,11 +198,11 @@
 					// 非目录，单一背景图
 					if(properties.image){
 						if(properties.image.value){
-							document.body.style.backgroundImage = "url('file:///"+ properties.image.value +"')";
+							document.body.style.groundImage = "url('file:///"+ properties.image.value +"')";
 						}else{
-							document.body.style.backgroundImage = "url('1.jpg')";
+							document.body.style.groundImage = "url('1.jpg')";
 						}
-						document.body.style.backgroundSize = '100% 100%';
+						document.body.style.groundSize = '100% 100%';
 					};
 				};
 				
